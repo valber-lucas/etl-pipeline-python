@@ -32,3 +32,16 @@ graph LR
     style A fill:#f9f,stroke:#333
     style F fill:#bbf,stroke:#333
 ```
+## Como Rodar
+
+**Gere o dataset de teste:**
+- Bash
+python generate_data.py
+
+**Execute o pipeline:**
+- Bash
+python etl_processor.py
+
+**Rode os testes unitários:**
+- Bash
+python test_etl.py
