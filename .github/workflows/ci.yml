@@ -1,0 +1,36 @@
+name: Python ETL Pipeline CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python 3.12
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.12"
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        # Se tivéssemos bibliotecas externas, instalaríamos aqui via requirements.txt
+        # pip install -r requirements.txt 
+        
+    - name: Run Unit Tests
+      run: |
+        python test_etl.py
+        
+    - name: Run ETL Pipeline (Sanity Check)
+      run: |
+        # Gera dados de teste rápido
+        python generate_data.py
+        # Roda o processamento
+        python etl_processor.py
