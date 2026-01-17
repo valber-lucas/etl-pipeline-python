@@ -36,14 +36,14 @@ graph LR
 ```
 ## Como Rodar
 ```bash
-**Gere o dataset de teste:**
+Gere o dataset de teste:
 - Bash:
 python generate_data.py
 
-**Execute o pipeline:**
+Execute o pipeline:
 - Bash:
 python etl_processor.py
 
-**Rode os testes unitários:**
+Rode os testes unitários:
 - Bash:
 python test_etl.py
