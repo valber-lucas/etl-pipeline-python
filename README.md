@@ -1,6 +1,6 @@
-# 🚀 High-Performance ETL Pipeline (Python)
+#  High-Performance ETL Pipeline (Python)
 
-Pipeline de Engenharia de Dados capaz de processar e ingerir datasets massivos com consumo de memória constante (O(1)).
+Pipeline de Engenharia de Dados capaz de processar e ingerir datasets massivos com consumo de memória constante.
 
 ## ⚡ Performance Benchmark
 - **Dataset:** 1 Milhão de registros (CSV gerado sinteticamente).
