@@ -35,7 +35,7 @@ graph LR
     style F fill:#bbf,stroke:#333
 ```
 ## Como Rodar
-
+```bash
 **Gere o dataset de teste:**
 - Bash:
 python generate_data.py
