@@ -35,13 +35,13 @@ graph LR
 ## Como Rodar
 
 **Gere o dataset de teste:**
-- Bash
+- Bash:
 python generate_data.py
 
 **Execute o pipeline:**
-- Bash
+- Bash:
 python etl_processor.py
 
 **Rode os testes unitários:**
-- Bash
+- Bash:
 python test_etl.py
