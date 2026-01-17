@@ -1,3 +1,5 @@
+<img src="VLCODE.png" alt="logo" width="150">
+
 #  High-Performance ETL Pipeline (Python)
 
 Pipeline de Engenharia de Dados capaz de processar e ingerir datasets massivos com consumo de memória constante.
